@@ -11,7 +11,11 @@ public:
     this->real=real;
     this->imaginary=imaginary;
   }
-  
+  void plus(ComplexNumbers const &c2)
+  {
+    real=real+c2.real;
+    imaginary=imaginary+c2.imaginary;
+  }
 int main()
 {
   int real1, imaginary1, real2, imaginary2;
