@@ -11,7 +11,16 @@ public:
     this->real=real;
     this->imaginary=imaginary;
   }
-  
+ ComplexNumbers(int real,int imaginary)
+  {
+    this->real=real;
+    this->imaginary=imaginary;
+  }
+  void print()
+  {
+    cout<<real<<" + "<<"i"<<imaginary<<endl;
+    
+  } 
 int main()
 {
   int real1, imaginary1, real2, imaginary2;
