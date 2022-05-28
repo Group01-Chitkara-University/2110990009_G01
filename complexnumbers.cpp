@@ -5,17 +5,51 @@ class ComplexNumbers
 private:
   int real;
   int imaginary;
+  
 public:
   ComplexNumbers(int real,int imaginary)
   {
     this->real=real;
     this->imaginary=imaginary;
   }
+
+
   void plus(ComplexNumbers const &c2)
   {
     real=real+c2.real;
     imaginary=imaginary+c2.imaginary;
   }
+  
+ 
+  void minus(ComplexNumbers const &c2)
+  {
+    real=real-c2.real;
+    imaginary=imaginary-c2.imaginary;
+  }
+  
+  
+  
+void print()
+  {
+    cout<<real<<" + "<<"i"<<imaginary<<endl;
+    
+  }
+  
+  
+  void multiply(ComplexNumbers const &c2)
+  {
+    int firsts=real*c2.real;
+    int outers=real*c2.imaginary;
+    int inners=imaginary*c2.real;
+    int lasts=(-1)*(imaginary*c2.imaginary);
+    real=firsts+lasts;
+    imaginary=outers+inners;
+  } 
+
+  
+  
+  
+
 int main()
 {
   int real1, imaginary1, real2, imaginary2;
