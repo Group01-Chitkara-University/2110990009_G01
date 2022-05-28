@@ -4,3 +4,4 @@ void plus(ComplexNumbers const &c2)
     imaginary=imaginary+c2.imaginary;
   }
   //
+//
