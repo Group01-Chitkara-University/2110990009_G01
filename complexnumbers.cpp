@@ -47,7 +47,7 @@ void print()
   } 
 
   
-  
+};
   
 
 int main()
